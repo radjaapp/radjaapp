@@ -177,6 +177,7 @@
           // Check input name,email,pesan
           if (name == '' || email == '' || pesan == '') {
             alert('Data Belum Lengkap.!');
+            document.location.href = "https://radjapp.github.io/";
           }else{
             // Jika data lengkap maka ke wahtsapp
             window.open('https://api.whatsapp.com/send?phone=62082372750553' + '&text=' + 'Nama : ' + name + '%0A' + 'Email : ' + email + '%0A' +'Pesan : ' + pesan);
